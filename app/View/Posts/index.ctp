@@ -1,6 +1,27 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
-<h1>Blog posts</h1>
+<h1>Zhiyuan's Page</h1>
+<div id='Intro'>
+    <div class='img'>
+        <?php echo $this->Html->image('self.JPG', array('alt' => 'selfPhoto', 'width' => '300px', 'height' => '300px')); ?>
+    </div>
+    <div class='text'>
+        <p> &nbsp; First Name: Zhiyuan</p>
+        <p> &nbsp; Last Name: Guo</p>
+        <p> &nbsp; Born Place: XinJiang, China</p>
+        <p> &nbsp; College: Shanghai Jiao Tong University</p>
+        <p> &nbsp; Graduate: Columbia University</p>
+        <p> &nbsp; <?php echo $this->Html->link(
+                    'Resume', array('action' => 'resume'));
+                    ?>
+        </p>
+    </div>
+    <div class='footer'>
+    </div>
+
+</div>
+
+
 <p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
 <table>
     <tr>

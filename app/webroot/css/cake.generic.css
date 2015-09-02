@@ -21,9 +21,23 @@
 	padding:0;
 }
 
+
+/** self configuration **/
+#Intro .img {
+	float: left;
+}
+
+#Intro .text {
+	font-size: 150%;
+}
+
+#Intro .footer{
+	clear: both;
+}
 /** General Style Info **/
 body {
-	background: #003d4c;
+	/**background: #003d4c;**/
+	background: #ffffff;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -48,7 +62,7 @@ h1, h2, h3, h4 {
 h1 {
 	background:#fff;
 	color: #003d4c;
-	font-size: 100%;
+	font-size: 300%;
 }
 h2 {
 	background:#fff;
