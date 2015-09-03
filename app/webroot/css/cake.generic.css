@@ -34,6 +34,10 @@
 #Intro .footer{
 	clear: both;
 }
+
+#Photo .img {
+	float: left;
+}
 /** General Style Info **/
 body {
 	/**background: #003d4c;**/

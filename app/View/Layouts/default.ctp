@@ -13,7 +13,7 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
+$zhiyuanTitle = __d('cake_dev', 'Zhiyuan');
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
@@ -22,7 +22,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo $zhiyuanTitle ?>:
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<?php

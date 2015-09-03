@@ -18,11 +18,9 @@
     </div>
     <div class='footer'>
     </div>
-
 </div>
 
 
-<p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
 <table>
     <tr>
         <th>Id</th>
@@ -63,5 +61,6 @@
         </td>
     </tr>
     <?php endforeach; ?>
+</table>    
 
-</table>
+<p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
