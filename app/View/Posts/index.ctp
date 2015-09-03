@@ -51,7 +51,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <?php endforeach; ?>
 </table>
 
-
+<p id='connectLink'><?php echo $this->Html->link('To Photos', array('controller' => 'Photos', 'action' => 'index')); ?></p>
 
 <body>
     <div id="footer">
