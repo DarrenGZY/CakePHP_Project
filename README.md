@@ -9,3 +9,6 @@ server: apache.
 framework: cakePHP.
 
 host: aws ec2 instance. IP: http://54.236.179.64/  DNS: http://ec2-54-236-179-64.compute-1.amazonaws.com/
+
+Link: http://54.236.179.64/posts is the original view in the tutorial.
+	  http://54.236.179.64/photos is my own implementation of a photo display webpage.
