@@ -20,18 +20,6 @@ class PostsController extends AppController {
         $this->set('post', $post);
     }
 
-    public function resume(){
-        $this->viewClass = 'Media';
-        
-        $params = array(
-            'id'        => 'Resume.pdf',
-            'name'      => 'Resume',
-            'extension' => 'pdf',
-            'path'      => 'files' . DS
-        );
-        $this->set($params);
-    }
-
     public function add() {
         if ($this->request->is('post')) {
             $this->Post->create();
