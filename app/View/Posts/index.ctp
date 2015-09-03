@@ -53,7 +53,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 <p id='connectLink'><?php echo $this->Html->link('To Photos', array('controller' => 'Photos', 'action' => 'index')); ?></p>
 
-<body>
+<body id='postBody'>
     <div id="footer">
         <?php echo $this->Html->link(
             $this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),

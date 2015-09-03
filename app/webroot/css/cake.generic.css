@@ -37,6 +37,7 @@
 
 #Photo .img {
 	float: left;
+	image-orientation: from-image;
 }
 
 #Photos {
@@ -61,9 +62,17 @@
 	font-size: 150%;
 }
 
+#postBody {
+	background: #003d4c;
+	color: #fff;
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size:90%;
+	margin: 0;
+}
+
 /** General Style Info **/
 body {
-	background: #003d4c;
+	background: #ffffff;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
