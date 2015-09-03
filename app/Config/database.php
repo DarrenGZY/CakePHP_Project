@@ -74,7 +74,7 @@ class DATABASE_CONFIG {
 		'host' => '127.0.0.1',
 		'port' => '3306',
 		'login' => 'root',
-		'password' => '0815',
+		'password' => '',
 		'database' => 'cakephp',
 		'prefix' => '',
 		'encoding' => 'utf8',
