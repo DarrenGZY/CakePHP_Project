@@ -67,4 +67,5 @@
 </table>
 
 <p><?php echo $this->Html->link('Add Photo', array('action' => 'add')); ?></p>
+<p id='connectLink'><?php echo $this->Html->link('To Posts', array('controller' => 'Posts', 'action' => 'index')); ?></p>
 </body>   

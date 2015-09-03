@@ -56,6 +56,11 @@
 	font-size: 300%;
 }
 
+#connectLink{
+	float: right;
+	font-size: 150%;
+}
+
 /** General Style Info **/
 body {
 	background: #003d4c;
