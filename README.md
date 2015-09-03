@@ -8,4 +8,4 @@ server: apache.
 
 framework: cakePHP.
 
-host: ec2 instance. IP: http://54.236.179.64/  DNS: http://ec2-54-236-179-64.compute-1.amazonaws.com/
+host: aws ec2 instance. IP: http://54.236.179.64/  DNS: http://ec2-54-236-179-64.compute-1.amazonaws.com/
