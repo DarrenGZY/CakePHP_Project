@@ -35,10 +35,6 @@ class PhotosController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
             $this->Photo->create();
-            echo "<pre>";
-            print_r($this->request->data);
-            echo "</pre>";
-            echo exec('whoami');
 
             $file = $this->request->data['Photo']['upload'];
 

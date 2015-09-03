@@ -1,6 +1,8 @@
 <!-- File: /app/View/Photos/index.ctp -->
 
-<h1>Zhiyuan's Page</h1>
+<h1 id='PhotosHead'>Zhiyuan's Page</h1>
+
+<body id='Photos'>
 <div id='Intro'>
     <div class='img'>
         <?php echo $this->Html->image('self.JPG', array('alt' => 'selfPhoto', 'width' => '300px', 'height' => '300px')); ?>
@@ -64,4 +66,5 @@
     <?php endforeach; ?>
 </table>
 
-<p><?php echo $this->Html->link('Add Photo', array('action' => 'add')); ?></p>    
+<p><?php echo $this->Html->link('Add Photo', array('action' => 'add')); ?></p>
+</body>   

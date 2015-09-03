@@ -38,10 +38,27 @@
 #Photo .img {
 	float: left;
 }
+
+#Photos {
+	background: #ffffff;
+	/**background: #ffffff;**/
+	color: #fff;
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size:90%;
+	margin: 0;
+}
+
+#PhotosHead {
+	font-weight: normal;
+	margin-bottom:0.5em;
+	background:#fff;
+	color: #003d4c;
+	font-size: 300%;
+}
+
 /** General Style Info **/
 body {
-	/**background: #003d4c;**/
-	background: #ffffff;
+	background: #003d4c;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -66,7 +83,7 @@ h1, h2, h3, h4 {
 h1 {
 	background:#fff;
 	color: #003d4c;
-	font-size: 300%;
+	font-size: 100%;
 }
 h2 {
 	background:#fff;

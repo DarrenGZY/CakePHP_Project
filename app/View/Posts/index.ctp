@@ -1,25 +1,13 @@
 <!-- File: /app/View/Posts/index.ctp -->
+<?php
 
-<h1>Zhiyuan's Page</h1>
-<div id='Intro'>
-    <div class='img'>
-        <?php echo $this->Html->image('self.JPG', array('alt' => 'selfPhoto', 'width' => '300px', 'height' => '300px')); ?>
-    </div>
-    <div class='text'>
-        <p> &nbsp; First Name: Zhiyuan</p>
-        <p> &nbsp; Last Name: Guo</p>
-        <p> &nbsp; Born Place: XinJiang, China</p>
-        <p> &nbsp; College: Shanghai Jiao Tong University</p>
-        <p> &nbsp; Graduate: Columbia University</p>
-        <p> &nbsp; <?php echo $this->Html->link(
-                    'Resume', array('action' => 'resume'));
-                    ?>
-        </p>
-    </div>
-    <div class='footer'>
-    </div>
-</div>
+$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
+?>
 
+<h1>Zhiyuan's Posts</h1>
+
+<p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
 
 <table>
     <tr>
@@ -61,6 +49,19 @@
         </td>
     </tr>
     <?php endforeach; ?>
-</table>    
+</table>
 
-<p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
+
+
+<body>
+    <div id="footer">
+        <?php echo $this->Html->link(
+            $this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+            'http://www.cakephp.org/',
+            array('target' => '_blank', 'escape' => false)
+            );
+        ?>
+    </div>
+    <?php echo $this->element('sql_dump'); ?>
+</body>
+
