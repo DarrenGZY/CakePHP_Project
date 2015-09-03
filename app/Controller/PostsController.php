@@ -2,7 +2,7 @@
 
 class PostsController extends AppController {
     public $helpers = array('Html', 'Form');
-    public $components = array('Session');
+    public $components = array('Flash');
 
     public function index() {
          $this->set('posts', $this->Post->find('all'));
@@ -36,15 +36,12 @@ class PostsController extends AppController {
         if ($this->request->is('post')) {
             $this->Post->create();
 
-            echo "<pre>";
-            print_r($this->request->data);
-            echo "</pre>";
-            /*
+            
             if ($this->Post->save($this->request->data)) {
-                $this->Session->setFlash(__('Your post has been saved.'));
+                $this->Flash->set(__('Your post has been saved.'));
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(__('Unable to add your post.'));*/
+            $this->Flash->set(__('Unable to add your post.'));
         }
     }
 
@@ -61,10 +58,10 @@ class PostsController extends AppController {
         if ($this->request->is(array('post', 'put'))) {
             $this->Post->id = $id;
             if ($this->Post->save($this->request->data)) {
-                $this->Session->setFlash(__('Your post has been updated.'));
+                $this->Flash->set(__('Your post has been updated.'));
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(__('Unable to update your post.'));
+            $this->Flash->set(__('Unable to update your post.'));
         }
 
         if (!$this->request->data) {
@@ -78,11 +75,11 @@ class PostsController extends AppController {
         }
 
         if ($this->Post->delete($id)) {
-            $this->Session->setFlash(
+            $this->Flash->set(
                 __('The post with id: %s has been deleted.', h($id))
             );
         } else {
-            $this->Session->setFlash(
+            $this->Flash->set(
                 __('The post with id: %s could not be deleted.', h($id))
             );
         }
