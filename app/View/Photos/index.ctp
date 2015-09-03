@@ -5,7 +5,7 @@
 <body id='Photos'>
 <div id='Intro'>
     <div class='img'>
-        <?php echo $this->Html->image('self.JPG', array('alt' => 'selfPhoto', 'width' => '50%', 'height' => '50%')); ?>
+        <?php echo $this->Html->image('self.JPG', array('alt' => 'selfPhoto', 'width' => '300px', 'height' => '300px')); ?>
     </div>
     <div class='text'>
         <p> &nbsp; First Name: Zhiyuan</p>

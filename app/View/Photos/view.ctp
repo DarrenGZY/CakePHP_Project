@@ -9,6 +9,6 @@
 <div id='Photo'>
     <div class='img'>
         <?php echo $this->Html->image($photo['Photo']['filename'], array('alt' => $photo['Photo']['title'], 
-        'width' => '500px', 'height' => '500px')); ?>
+        'width' => '50%', 'height' => '50%')); ?>
     </div>
 </div>
